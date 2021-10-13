@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="blur-area"></div>
+
+            <nav>
+                <img src="Images/pngtree-coffee-logo-design-image_82183-removebg-preview.png" class="logo">
+                <ul>
+           <li><a href="">HOME</a></li>
+           <li><a href="">COFFEES</a></li>
+           <li><a href="">CONTACT</a></li>
+           <li><a href="">ABOUT</a></li>
+           </ul>   
+            </nav> 
+            <div class="text-box">
+                <h1>Cafe house</h1>
+                <button type="button"> Order now!!!</button>
+            </div>
+        </div>
+        <script>
+            var blurArea= document.getElementById("blur-area")
+        
+        document.onmousemove = fuction(e)
+        blurArea.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`
+        
+            
+        </script>
+    </body>
+</html>
